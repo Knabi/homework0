@@ -1,0 +1,27 @@
+---
+title: "hw0"
+---
+
+```{r}
+a <- 1 
+b <- 3
+c <- 2
+x <- seq(-5, 5, length = 300)
+plot(x, a*x^2 + b*x + c, type = "l")
+abline(h = 0, lty = 2)
+points(-1, 0, col="red", pch=19)
+points(-2, 0, col="green", pch=19)
+```
+
+```{r}
+# Define the coefficients of the polynomial
+coefficients <- c(2, 3, 1)
+
+# Find the roots
+roots <- polyroot(coefficients)
+
+# Print the roots
+print(roots)
+```
+
+Interpretation: The plot shows a parabola, which has two real roots ($x=-1,-2$) since the discriminant ($b^2-4ac$) is greater than 0. The roots are also shown in the plot.
